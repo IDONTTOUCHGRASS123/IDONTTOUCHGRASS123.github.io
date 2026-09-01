@@ -1,5 +1,7 @@
 # About Me
 Hello! I am JP.
+Re:zero Lover
+
 I play lots of Apex Legends, Super Smash Bros., and Marvel Rivals. My favorite anime is Oshi No Ko, Re:zero, and Naruto.
 I like to go to the gym and do martial arts.
 My career choice are psychology and cybersecurity because of my interests in technology and the human mind.
