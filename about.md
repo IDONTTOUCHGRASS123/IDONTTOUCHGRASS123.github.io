@@ -14,4 +14,3 @@ Cyberpatriot will be the best competition to help me prepare for future goals.
 
 [Home](index.md)
 
-theme: jekyll-theme-architect
