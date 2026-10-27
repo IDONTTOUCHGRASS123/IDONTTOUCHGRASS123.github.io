@@ -14,6 +14,12 @@
   --body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -52,6 +58,7 @@ body > header {
 }
 
 body > header .inner {
+  position: relative;
   max-width: 1040px;
   min-height: 340px;
   padding: 76px 24px 58px;
@@ -86,13 +93,17 @@ body > header h2 {
 }
 
 body > header .button {
-  margin-top: 21px;
+  position: absolute;
+  top: 76px;
+  right: 24px;
+  margin: 0;
   padding: 10px 18px;
   border: 1px solid rgb(255 246 235 / 42%);
   border-radius: 3px;
   background: var(--crimson-dark);
   box-shadow: 0 5px 16px rgb(0 0 0 / 25%);
   color: #fffaf4;
+  float: none;
   font-family: var(--body);
   font-weight: 600;
 }
@@ -279,6 +290,12 @@ body > header .button:hover {
 
   body > header .inner {
     padding: 56px 20px 38px;
+  }
+
+  body > header .button {
+    position: static;
+    display: inline-block;
+    margin-top: 18px;
   }
 
   #content-wrapper > .inner {
