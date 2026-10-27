@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive lesson about ethical software choices, phishing, and U.S. computer-access law.">
+  <title>Pause Before You Trust | Safety, Law &amp; Ethics</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to lesson</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Pause Before You Trust home">
+      <span class="wordmark-icon" aria-hidden="true">PB</span>
+      <span>Pause Before You Trust</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#try-it">Try it</a>
+      <a href="#case-file">Case file</a>
+      <a href="#takeaway">Your takeaway</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A 5-minute decision lab</p>
+        <h1 id="hero-title">A useful feature can still cross a line.</h1>
+        <p class="hero-lede">When software handles private information, “Can we build it?” is only the first question. Practice asking who could be harmed, what the rules say, and what a safer choice looks like.</p>
+        <a class="button button-light" href="#try-it">Start the decision lab <span aria-hidden="true">↓</span></a>
+      </div>
+      <aside class="hero-card" aria-label="Lesson goals">
+        <p class="card-kicker">TODAY'S MISSION</p>
+        <p class="mission">Spot the risk.<br>Choose the safer design.<br>Explain your reasoning.</p>
+        <div class="standard-tags">
+          <span>Standard 5.3</span>
+          <span>Ethics 5.3.4</span>
+          <span>Law 5.3.5</span>
+        </div>
+      </aside>
+      <div class="hero-decoration" aria-hidden="true">!</div>
+    </section>
+
+    <div class="page-content">
+      <section class="section-block" id="try-it" aria-labelledby="try-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / DESIGN CHOICE</p>
+          <h2 id="try-title">What should the app learn about you?</h2>
+          <p>A neighborhood events app wants to recommend nearby activities. Choose what location access you would allow. This is a simulation: the page never requests or reads your actual location.</p>
+        </div>
+        <div class="location-lab">
+          <div class="phone-card" aria-label="Simulated neighborhood events app">
+            <div class="phone-top"><span class="app-mark" aria-hidden="true">near.</span><span class="privacy-indicator"><span class="status-dot"></span> YOUR DATA</span></div>
+            <div class="map-art" aria-hidden="true">
+              <span class="map-line line-one"></span><span class="map-line line-two"></span><span class="map-line line-three"></span>
+              <span class="map-pin"><span></span></span>
+              <span class="map-label label-one">PARK</span><span class="map-label label-two">YOU?</span>
+            </div>
+            <p class="phone-caption">Nearby events, without the guesswork.</p>
+            <div class="data-receipt" aria-live="polite" aria-atomic="true">
+              <p class="receipt-label">WHAT THE APP RECEIVES</p>
+              <p id="location-result">Nothing yet. You decide.</p>
+              <p class="receipt-detail" id="location-detail">Choose an access level to preview the trade-off.</p>
+            </div>
+          </div>
+          <div class="choice-panel">
+            <p class="card-kicker">PICK A PERMISSION</p>
+            <div class="choice-list" role="group" aria-label="Choose the app's location access">
+              <button class="choice-button" type="button" data-location="none" aria-pressed="false">
+                <span class="choice-number">A</span><span><strong>Don't share</strong><small>Show general events; no location data.</small></span><span class="choice-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="choice-button" type="button" data-location="approximate" aria-pressed="false">
+                <span class="choice-number">B</span><span><strong>Approximate area</strong><small>Share a broad area only when using the app.</small></span><span class="choice-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="choice-button" type="button" data-location="precise" aria-pressed="false">
+                <span class="choice-number">C</span><span><strong>Precise, always</strong><small>Share an exact location, even in the background.</small></span><span class="choice-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+            <div class="ethics-note" id="location-feedback" aria-live="polite">
+              <span class="note-icon" aria-hidden="true">↳</span>
+              <p><strong>Think like a designer.</strong> What is the least data that still makes the feature useful? Is the permission clear, optional, and easy to change?</p>
+            </div>
+          </div>
+        </div>
+        <div class="concept-row">
+          <article class="concept-card ethics-card">
+            <span class="concept-label">ETHICS</span>
+            <h3>What should we do?</h3>
+            <p>Ethics asks what is fair and responsible. Respecting consent, collecting only needed data, explaining its use, and reducing harm are design duties—even when a choice is technically possible.</p>
+          </article>
+          <article class="concept-card law-card">
+            <span class="concept-label">LAW · U.S. FEDERAL</span>
+            <h3>What is legally allowed?</h3>
+            <p>The Computer Fraud and Abuse Act (CFAA), 18 U.S.C. § 1030, prohibits specified forms of unauthorized access to protected computers. It is a legal boundary, not a complete ethics checklist. Whether conduct violates the law depends on the facts; a suspicious message alone is not automatically a CFAA violation.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="case-section" id="case-file" aria-labelledby="case-title">
+        <div class="case-topline"><span>02 / CASE FILE</span><span class="case-stamp">YOUR CALL</span></div>
+        <div class="case-layout">
+          <div>
+            <p class="eyebrow">A message lands in the school chat</p>
+            <h2 id="case-title">“Your account closes at 3 PM. Sign in now.”</h2>
+            <p class="case-description">The sender looks like school support, but the address is unfamiliar. The link opens a look-alike sign-in page asking for a password and a one-time verification code. You are reviewing this feature before your club app goes live.</p>
+            <div class="clue-list" aria-label="Warning signs">
+              <span>Unexpected urgency</span><span>Unfamiliar address</span><span>Requests a verification code</span>
+            </div>
+          </div>
+          <div class="quiz-card">
+            <p class="card-kicker">WHAT IS YOUR FIRST MOVE?</p>
+            <div class="answer-list" role="group" aria-label="Choose your response">
+              <button class="answer-button" type="button" data-answer="reply" aria-pressed="false"><span>01</span> Reply to the sender and ask if it's real.</button>
+              <button class="answer-button" type="button" data-answer="verify" aria-pressed="false"><span>02</span> Don't use the link. Verify with school IT through a known contact method, and report it.</button>
+              <button class="answer-button" type="button" data-answer="share" aria-pressed="false"><span>03</span> Forward it to classmates so they can decide for themselves.</button>
+            </div>
+            <button class="button button-dark" id="check-answer" type="button" disabled>Check my reasoning</button>
+            <div class="quiz-feedback" id="quiz-feedback" role="status" aria-live="polite" hidden></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="learn-more" aria-label="Why the clues matter">
+        <div class="learn-icon" aria-hidden="true">i</div>
+        <div>
+          <h3>Why pause?</h3>
+          <p>Phishing messages impersonate trusted people or organizations to trick someone into sharing information or taking an unsafe action. Urgency, a mismatched sender or link, and a request for a password or one-time code are reasons to stop and verify independently. Don't reply, open unexpected links, or pass them along.</p>
+          <p class="law-caution"><strong>Ethics and law are related, not identical.</strong> Deceiving people and exposing their accounts raises ethical concerns. U.S. federal computer-access law may apply to particular unauthorized access; the facts matter, and this lesson is educational—not legal advice.</p>
+        </div>
+      </section>
+
+      <section class="reflection-section" id="takeaway" aria-labelledby="reflection-title">
+        <div class="reflection-heading">
+          <p class="eyebrow">03 / MAKE IT YOURS</p>
+          <h2 id="reflection-title">Explain the choice. Improve the lesson.</h2>
+          <p>Write in your own words. After a classmate tries the site, record real feedback and one change you made. Nothing you enter is sent anywhere; download your notes when you're done.</p>
+        </div>
+        <form id="reflection-form">
+          <div class="reflection-grid">
+            <label class="reflection-field" for="reasoning"><span>1. Your reasoning</span><small>Why is your choice ethical? What does the law cover—and what does it not decide?</small><textarea id="reasoning" name="reasoning" rows="4" placeholder="I chose this because…"></textarea></label>
+            <label class="reflection-field" for="code-interaction"><span>2. One code interaction</span><small>Explain how the location selector changes the simulated data receipt. Why is it safer than asking for your real GPS location?</small><textarea id="code-interaction" name="code-interaction" rows="4" placeholder="When I selected…"></textarea></label>
+            <label class="reflection-field peer-field" for="peer-feedback"><span>3. Peer test: feedback</span><small>After a classmate tries the site, what specifically confused them or could work better?</small><textarea id="peer-feedback" name="peer-feedback" rows="3" placeholder="My classmate said…"></textarea></label>
+            <label class="reflection-field peer-field" for="revision"><span>4. Revision and retest</span><small>What one change did you make because of that feedback? What happened when they tried it again?</small><textarea id="revision" name="revision" rows="3" placeholder="I changed… The retest showed…"></textarea></label>
+          </div>
+          <div class="reflection-actions">
+            <button class="button button-dark" type="submit">Download my reflection</button>
+            <p id="reflection-status" role="status" aria-live="polite">Complete all four prompts to create a private text file on your device.</p>
+          </div>
+        </form>
+        <p class="peer-reminder"><strong>Peer-test reminder:</strong> Don't invent feedback. Ask a classmate to try the lesson first, then document their actual suggestion and your improvement.</p>
+      </section>
+
+      <section class="sources-section" aria-labelledby="sources-title">
+        <div>
+          <p class="eyebrow">GO DEEPER</p>
+          <h2 id="sources-title">Sources &amp; scope</h2>
+          <p>This lesson focuses on phishing awareness and privacy-conscious software design. The law discussed is U.S. federal law; other jurisdictions have different rules.</p>
+        </div>
+        <ol class="source-list">
+          <li><a href="https://consumer.ftc.gov/consumer-alerts/2025/04/protect-yourself-phishing-scams" target="_blank" rel="noopener noreferrer">Federal Trade Commission, “Protect yourself from phishing scams” (2025)</a><span>U.S. consumer guidance on identifying and responding to phishing.</span></li>
+          <li><a href="https://www.fbi.gov/how-we-can-help-you/common-frauds-and-scams/spoofing-and-phishing" target="_blank" rel="noopener noreferrer">Federal Bureau of Investigation, “Spoofing and Phishing”</a><span>U.S. federal law-enforcement guidance on spoofing and phishing.</span></li>
+          <li><a href="https://www.govinfo.gov/content/pkg/USCODE-2023-title18/pdf/USCODE-2023-title18-partI-chap47-sec1030.pdf" target="_blank" rel="noopener noreferrer">18 U.S.C. § 1030, Computer Fraud and Abuse Act (CFAA)</a><span>Official 2023 edition of the U.S. Code, published by the U.S. Government Publishing Office.</span></li>
+        </ol>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <span>Pause before you trust.</span>
+    <span>Stay curious. Collect less. Verify first.</span>
+  </footer>
+</body>
+</html>

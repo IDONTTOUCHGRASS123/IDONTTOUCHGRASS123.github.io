@@ -2,6 +2,7 @@
 ## Projects
 - Show Suggestion: Description
 - Danganronpa Game: Description
+- [Safety, Law & Ethics: Pause Before You Trust](safety-law-ethics/)
 
 # About Me
 Click here to learn more → [About Me](about.md)
