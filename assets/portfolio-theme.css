@@ -51,7 +51,7 @@ body > header {
   background-color: var(--night);
   background-image:
     linear-gradient(90deg, rgb(15 14 25 / 88%) 0%, rgb(18 15 27 / 54%) 47%, rgb(19 13 24 / 25%) 100%),
-    url("/assets/images/rezero-banner.webp");
+    url("/assets/images/rezero-banner.gif");
   background-position: center 43%;
   background-size: cover;
   border-bottom: 4px solid var(--gold);
