@@ -2,6 +2,12 @@
   - [Headings](#headings)
   - [Text Formatting](#text-formatting)
 
+<nav class="site-navigation" aria-label="Portfolio navigation">
+  <a href="/">Home</a>
+  <a href="/about.html">About Me</a>
+  <a href="/notebook.html" aria-current="page">Notebook</a>
+</nav>
+
 ## Markdown Style Guide for Coding Notebooks
 Follow this guide to keep your coding notebook **clear, consistent, and professional**.  
 This ensures your notes are easy for you (and others) to read later.

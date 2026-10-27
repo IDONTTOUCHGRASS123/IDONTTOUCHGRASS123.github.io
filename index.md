@@ -1,4 +1,10 @@
-# Welcome to My Portfolio Hello!
+# Welcome to JP's World
+<nav class="site-navigation" aria-label="Portfolio navigation">
+  <a href="/" aria-current="page">Home</a>
+  <a href="/about.html">About Me</a>
+  <a href="/notebook.html">Notebook</a>
+</nav>
+
 ## Projects
 - Show Suggestion: Description
 - Danganronpa Game: Description
@@ -11,5 +17,3 @@ Click here to learn more → [About Me](about.md)
 Click here to go to my notebook → [Notebook](notebook.md)
 
 [Home](index.md)
-
-theme: jekyll-theme-architect

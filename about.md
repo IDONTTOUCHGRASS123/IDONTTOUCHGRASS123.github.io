@@ -1,4 +1,10 @@
 # About Me
+<nav class="site-navigation" aria-label="Portfolio navigation">
+  <a href="/">Home</a>
+  <a href="/about.html" aria-current="page">About Me</a>
+  <a href="/notebook.html">Notebook</a>
+</nav>
+
 Hello! I am JP.
 Re:zero Lover
 
@@ -11,9 +17,6 @@ The technological student association is the best CTSO for me.
 Cyberpatriot will be the best competition to help me prepare for future goals. Can't wait for the future of what is to come next!!!
 <img width="1699" height="980" alt="human-head-with-glowing-neurons-in-brain-esoteric-and-meditation-concept-connection-with-other-worlds-creates-with-generative-ai-free-photo" src="https://github.com/user-attachments/assets/e9307833-91ee-423b-ade5-5a5d464c24b3" />
 
-
-##Navigation
+## Navigation
 [Notebook](notebook.md)
-
-[Home](index.md)
-
+[Notebook](notebook.md)
