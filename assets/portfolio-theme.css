@@ -47,6 +47,8 @@ a:focus-visible {
 }
 
 body > header {
+  position: relative;
+  overflow: hidden;
   min-height: 340px;
   background-color: var(--night);
   background-image:
@@ -57,8 +59,28 @@ body > header {
   border-bottom: 4px solid var(--gold);
 }
 
+body > header::before {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(90deg, rgb(15 14 25 / 78%) 0%, rgb(18 15 27 / 48%) 47%, rgb(19 13 24 / 25%) 100%);
+  content: "";
+  pointer-events: none;
+}
+
+.banner-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  border: 0;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
 body > header .inner {
   position: relative;
+  z-index: 2;
   max-width: 1040px;
   min-height: 340px;
   padding: 76px 24px 58px;
